@@ -1,0 +1,22 @@
+html,
+body,
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+}
+
+canvas {
+    touch-action: none;
+}
+
+.htmlScreen iframe {
+    width: 1024px !important;
+    height: 670px !important;
+    border: none;
+    border-radius: 20px;
+    background-color: #000;
+}
