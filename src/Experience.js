@@ -5,8 +5,10 @@ import {
   ContactShadows,
   Text,
 } from "@react-three/drei";
+import { Suspense } from "react";
 
 import Macbook from "./Macbook";
+import Placeholder from "./Placeholder";
 
 export default function Experience() {
   return (
@@ -20,7 +22,9 @@ export default function Experience() {
         <Environment preset="city" />
 
         <Float>
-          <Macbook />
+          <Suspense fallback={<Placeholder />}>
+            <Macbook />
+          </Suspense>
           <rectAreaLight
             width={4.5}
             height={1.65}
